@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Behind Image - Android App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #9c27b0, #673ab7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            text-align: center;
+            color: #b0b0b0;
+        }
+        
+        .app-preview {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .phone-mockup {
+            max-width: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            border: 1px solid #333;
+        }
+        
+        .features {
+            padding: 4rem 1rem;
+            background-color: #1e1e1e;
+            text-align: center;
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            background: linear-gradient(90deg, #9c27b0, #673ab7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: #252525;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #673ab7;
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #9c27b0;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .feature-card p {
+            color: #b0b0b0;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            color: white;
+        }
+        
+        .cta h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: #252525;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #333;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background-color: #333;
+            border-color: #9c27b0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a1a1a;
+            color: #b0b0b0;
+            border-top: 1px solid #333;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Text Behind Image</h1>
+            <p>Add text between objects and backgrounds</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Creative Text Layering Made Simple</h1>
+            <p>Text Behind Image lets you place text between objects and backgrounds in your photos. Create unique visual content with this powerful, free Android app.</p>
+            <a href="#download" class="download-btn">Download Free</a>
+        </div>
+    </section>
+    
+    <section class="app-preview">
+        <div class="container">
+            <div class="app-preview">
+                <img src="sc-2.jpeg" alt="App Screenshot" class="phone-mockup">
+                <img src="sc-1.jpeg" alt="App Screenshot" class="phone-mockup">
+            </div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Depth Layering</h3>
+                    <p>Place text between objects and backgrounds for a unique 3D effect.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-font"></i>
+                    <h3>Multiple Text Elements</h3>
+                    <p>Add multiple text elements with different styles and positions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fill-drip"></i>
+                    <h3>Custom Backgrounds</h3>
+                    <p>Change image backgrounds with solid colors of your choice.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Text Customization</h3>
+                    <p>Customize font styles, colors, sizes, and positioning.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>Dark Mode Interface</h3>
+                    <p>Enjoy a sleek dark mode UI that's easy on the eyes.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Completely Free</h3>
+                    <p>All features available at no cost - no hidden fees or subscriptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta" id="download">
+        <div class="container">
+            <h2>Download Text Behind Image Today</h2>
+            <a href="#" class="download-btn">
+                <i class="fab fa-google-play"></i> Get it on Google Play
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Text Behind Image. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
